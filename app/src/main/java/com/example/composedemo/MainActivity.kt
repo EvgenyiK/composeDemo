@@ -60,7 +60,7 @@ fun DemoSlider(sliderPosition: Float, onPositionChange: (Float) -> Unit) {
 
 @Composable
 fun DemoScreen() {
-    var sliderPosition by remember { mutableStateOf(20f) }
+    var sliderPosition by remember { mutableFloatStateOf(20f) }
 
     val handlePositionChange = { position: Float -> sliderPosition = position }
 
